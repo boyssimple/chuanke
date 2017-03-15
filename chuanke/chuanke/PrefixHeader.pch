@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  haochang
+//
+//  Created by zhouMR on 16/7/1.
+//  Copyright © 2016年 luowei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//public class
+#import "UIView+Frame.h"
+#import "NetTool.h"
+#import "NetContants.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "VCBase.h"
+#import "Resource.h"
+
+#define BASEURL @"http://pop2.client.chuanke.com/?"
+#define BASEURL2 @"http://pop.client.chuanke.com/?"
+
+#define DEVICEWIDTH [UIScreen mainScreen].bounds.size.width
+#define DEVICEHEIGHT [UIScreen mainScreen].bounds.size.height
+#define RATIO_WIDHT320 [UIScreen mainScreen].bounds.size.width/320.0
+#define RATIO_HEIGHT568 [UIScreen mainScreen].bounds.size.height/568.0
+
+//颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define RGB3(v)RGB(v,v,v)
+#define RGB(r,g,b)RGBA(r,g,b,1)
+
+#endif /* PrefixHeader_pch */
